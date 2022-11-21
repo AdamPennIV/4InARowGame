@@ -5,6 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class NewGame extends AppCompatActivity {
+    public static final int GRID_SIZE = 7;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
