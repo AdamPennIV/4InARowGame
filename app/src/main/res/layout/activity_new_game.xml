@@ -16,8 +16,59 @@
         app:layout_constraintRight_toRightOf="parent"
         android:columnCount="7"
         android:rowCount="7"
+        android:layout_margin="25dp">
 
-        >
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+        <Button style="@style/GameButton" />
+
+
 
 
     </GridLayout>
