@@ -9,7 +9,7 @@
     <GridLayout
         android:layout_width="373dp"
         android:layout_height="447dp"
-        android:layout_margin="dp"
+        android:layout_margin="0dp"
         android:columnCount="7"
         android:rowCount="7"
         app:layout_constraintBottom_toBottomOf="parent"
