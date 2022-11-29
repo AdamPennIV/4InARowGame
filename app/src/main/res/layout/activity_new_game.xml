@@ -7,11 +7,11 @@
     android:background="@drawable/activityscreen">
 
     <GridLayout
-        android:layout_width="370dp"
-        android:layout_height="421dp"
+        android:layout_width="320dp"
+        android:layout_height="401dp"
         android:layout_margin="0dp"
         android:background="@color/yellow"
-        android:columnCount="7"
+        android:columnCount="6"
         android:rowCount="7"
         android:useDefaultMargins="true"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,10 +45,6 @@
             style="@style/GameButton" />
 
         <Button
-            android:id="@+id/one7"
-            style="@style/GameButton" />
-
-        <Button
             android:id="@+id/two1"
             style="@style/GameButton" />
 
@@ -70,10 +66,6 @@
 
         <Button
             android:id="@+id/two6"
-            style="@style/GameButton" />
-
-        <Button
-            android:id="@+id/two7"
             style="@style/GameButton" />
 
         <Button
@@ -101,10 +93,6 @@
             style="@style/GameButton" />
 
         <Button
-            android:id="@+id/three7"
-            style="@style/GameButton" />
-
-        <Button
             android:id="@+id/four1"
             style="@style/GameButton" />
 
@@ -126,10 +114,6 @@
 
         <Button
             android:id="@+id/four6"
-            style="@style/GameButton" />
-
-        <Button
-            android:id="@+id/four7"
             style="@style/GameButton" />
 
         <Button
@@ -157,10 +141,6 @@
             style="@style/GameButton" />
 
         <Button
-            android:id="@+id/five7"
-            style="@style/GameButton" />
-
-        <Button
             android:id="@+id/six1"
             style="@style/GameButton" />
 
@@ -185,10 +165,6 @@
             style="@style/GameButton" />
 
         <Button
-            android:id="@+id/six7"
-            style="@style/GameButton" />
-
-        <Button
             android:id="@+id/seven1"
             style="@style/GameButton" />
 
@@ -210,10 +186,6 @@
 
         <Button
             android:id="@+id/seven6"
-            style="@style/GameButton" />
-
-        <Button
-            android:id="@+id/seven7"
             style="@style/GameButton" />
 
 
