@@ -13,11 +13,9 @@ public class MainActivity extends AppCompatActivity {
         private Button button; // establish first button
 
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //new game listener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -28,6 +26,15 @@ public class MainActivity extends AppCompatActivity {
                 openNewGame();
             }
         });
+
+        button = (Button) findViewById(R.id.button2);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHelp();
+            }
+        });
+
     }
 
 
@@ -37,8 +44,10 @@ public class MainActivity extends AppCompatActivity {
         // code to open 2nd activity
     }
 
-
-
-
+    public void openHelp(){
+        Intent intent = new Intent(this, Help.class);
+        startActivity(intent);
+        //code to open help page
+    }
 
 }

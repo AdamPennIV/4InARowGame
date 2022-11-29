@@ -2,4 +2,6 @@
     <string name="app_name">4InARow</string>
     <string name="Help">Help</string>
     <string name="newGame">New Game</string>
+    <string name="help_instructions">First player to connect 4 of their color in a row wins! (2 player only)</string>
+    <string name="thumbs_up">Happy thumbs up dude.</string>
 </resources>
