@@ -7,113 +7,214 @@
     android:background="@drawable/activityscreen">
 
     <GridLayout
-        android:layout_width="373dp"
-        android:layout_height="447dp"
+        android:layout_width="370dp"
+        android:layout_height="421dp"
         android:layout_margin="0dp"
+        android:background="@color/yellow"
         android:columnCount="7"
-        android:rowCount="6"
+        android:rowCount="7"
+        android:useDefaultMargins="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/one1"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/one1"
+            style="@style/GameButton"
+            tools:ignore="DuplicateIds" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/one3"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/one4"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/one5"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/one6"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/one7"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/two1"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/two2"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/two3"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/two4"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/two5"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/two6"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/two7"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/three1"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/three2"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/three3"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/three4"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/three5"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/three6"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/three7"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/four1"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/four2"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/four3"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/four4"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/four5"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/four6"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/four7"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/five1"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/five2"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/five3"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/five4"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/five5"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/five6"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/five7"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/six1"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/six2"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/six3"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/six4"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/six5"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/six6"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/six7"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/seven1"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/seven2"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/seven3"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/seven4"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/seven5"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/seven6"
+            style="@style/GameButton" />
 
-        <Button style="@style/GameButton" />
+        <Button
+            android:id="@+id/seven7"
+            style="@style/GameButton" />
 
 
     </GridLayout>
