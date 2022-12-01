@@ -9,8 +9,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-        private NewGame mGame; // establish mGame variable
-        private Button button; // establish first button
+    private NewGame mGame; // establish mGame variable
+    private Button button; // establish first button
 
 
     @Override

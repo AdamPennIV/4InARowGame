@@ -7,6 +7,7 @@
     android:background="@drawable/activityscreen">
 
     <GridLayout
+        android:id="@+id/connectGrid"
         android:layout_width="320dp"
         android:layout_height="401dp"
         android:layout_margin="0dp"
@@ -24,7 +25,7 @@
             style="@style/GameButton" />
 
         <Button
-            android:id="@+id/one1"
+            android:id="@+id/one2"
             style="@style/GameButton"
             tools:ignore="DuplicateIds" />
 
