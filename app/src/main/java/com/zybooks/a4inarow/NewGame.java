@@ -1,5 +1,6 @@
 package com.zybooks.a4inarow;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -41,7 +42,6 @@ public class NewGame extends AppCompatActivity {
         setContentView(R.layout.activity_new_game);
         p1Color = ContextCompat.getColor(this, R.color.red);
         p2Color = ContextCompat.getColor(this, R.color.blue);
-        int testColor = ContextCompat.getColor(this, R.color.black);
         gameClick();
 
 
@@ -51,13 +51,6 @@ public class NewGame extends AppCompatActivity {
 
 
     public void gameClick() {
-
-        /*int[] playerToken = new int[41];
-        for (int i = 0; i < playerToken.length; i++) {
-            if (playerToken[i] == playerToken[i+1]) {
-                Toast.makeText(NewGame.this,"game over", Toast.LENGTH_LONG ).show();
-            }
-        }*/
 
 
         button1 = findViewById(R.id.one1);
@@ -912,6 +905,7 @@ public class NewGame extends AppCompatActivity {
     public void checkWinner() {
         int testColor = ContextCompat.getColor(this, R.color.black);
 
+        int winner;
         int[] playerToken = new int[42]; // Create Array of integers
 
         playerToken[0] = button1Player; // Assign button values to the array for comparison in checks below
@@ -962,9 +956,11 @@ public class NewGame extends AppCompatActivity {
         if (gameTurn >= 7) { // Vertical Checks, playerTokens = 1 for Red/P1, = 2 for Blue/P2
             for (int i = 0; i < playerToken.length-3; i++) {
                 if (playerToken[i] == 1 && playerToken[i+1] == 1 && playerToken[i+2] == 1 && playerToken[i+3] == 1) {
-                    button35.setBackgroundColor(testColor);
+                    winner = 1;
+                    gameOver(winner);
                 } else if (playerToken[i] == 2 && playerToken[i+1] == 2 && playerToken[i+2] == 2 && playerToken[i+3] == 2) {
-                    button36.setBackgroundColor(testColor);
+                    winner = 2;
+                    gameOver(winner);
                 }
             }
         }
@@ -972,9 +968,11 @@ public class NewGame extends AppCompatActivity {
         if (gameTurn >= 7) { // Horizontal Checks, playerTokens == 1 for Red/P1, == 2 for Blue/P2
             for (int i = 0; i < playerToken.length-18; i++) {
                 if (playerToken[i] == 1 && playerToken[i+6] == 1 && playerToken[i+12] == 1 && playerToken[i+18] == 1) {
-                    button37.setBackgroundColor(testColor);
+                    winner = 1;
+                    gameOver(winner);
                 } else if (playerToken[i] == 2 && playerToken[i+6] == 2 && playerToken[i+12] == 2 && playerToken[i+18] == 2) {
-                    button38.setBackgroundColor(testColor);
+                    winner = 2;
+                    gameOver(winner);
                 }
             }
         }
@@ -982,9 +980,11 @@ public class NewGame extends AppCompatActivity {
         if (gameTurn >= 7) { // Vertical Upwards Checks, playerTokens == 1 for Red/P1, == 2 for Blue/P2
             for (int i = 0; i < playerToken.length-21; i++) {
                 if (playerToken[i] == 1 && playerToken[i+7] == 1 && playerToken[i+14] == 1 && playerToken[i+21] == 1) {
-                    button37.setBackgroundColor(testColor);
+                    winner = 1;
+                    gameOver(winner);
                 } else if (playerToken[i] == 2 && playerToken[i+7] == 2 && playerToken[i+14] == 2 && playerToken[i+21] == 2) {
-                    button38.setBackgroundColor(testColor);
+                    winner = 2;
+                    gameOver(winner);
                 }
             }
         }
@@ -992,13 +992,28 @@ public class NewGame extends AppCompatActivity {
         if (gameTurn >= 7) { // Vertical Downwards Checks, playerTokens == 1 for Red/P1, == 2 for Blue/P2
             for (int i = 0; i < playerToken.length-15; i++) {
                 if (playerToken[i] == 1 && playerToken[i+5] == 1 && playerToken[i+10] == 1 && playerToken[i+15] == 1) {
-                    button37.setBackgroundColor(testColor);
+                    winner = 1;
+                    gameOver(winner);
                 } else if (playerToken[i] == 2 && playerToken[i+5] == 2 && playerToken[i+10] == 2 && playerToken[i+15] == 2) {
-                    button38.setBackgroundColor(testColor);
+                    winner = 2;
+                    gameOver(winner);
                 }
             }
         }
 
+
+
+
+    }
+
+    public void gameOver(int winner) {
+        if (winner == 1){
+            Intent intent = new Intent(this, GameOverPlayer1.class);
+            startActivity(intent);
+        } else if (winner == 2) {
+            Intent intent = new Intent(this, GameOverPlayer2.class);
+            startActivity(intent);
+        }
 
 
     }

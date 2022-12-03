@@ -4,4 +4,7 @@
     <string name="newGame">New Game</string>
     <string name="help_instructions">First player to connect 4 of their color in a row wins! (2 player only)</string>
     <string name="thumbs_up">Happy thumbs up dude.</string>
+    <string name="gameOver">The game is over!</string>
+    <string name="player1Win">Player 1 (Red) Wins!</string>
+    <string name="player2Win">Player 2 (Blue) Wins!</string>
 </resources>

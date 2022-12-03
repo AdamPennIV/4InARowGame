@@ -21,6 +21,14 @@
             android:exported="false"
             android:screenOrientation="landscape"/>
 
+        <activity android:name=".GameOverPlayer1"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".GameOverPlayer2"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

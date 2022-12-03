@@ -9,7 +9,7 @@
     <GridLayout
         android:id="@+id/connectGrid"
         android:layout_width="320dp"
-        android:layout_height="401dp"
+        android:layout_height="406dp"
         android:layout_margin="0dp"
         android:background="@color/yellow"
         android:columnCount="6"
