@@ -1078,7 +1078,7 @@ public class NewGame extends AppCompatActivity {
     public void checkWinner(int[]buttonColumn, int[]buttonRow) {
         //int testColor = ContextCompat.getColor(this, R.color.black);
 
-        int winner;
+        int winner = 3;
         int[] playerToken = new int[42]; // Create Array of integers
 
         playerToken[0] = button1Player; // Assign button values to the array for comparison in checks below
@@ -1180,8 +1180,7 @@ public class NewGame extends AppCompatActivity {
             }
         }
 
-        if (gameTurn > 42) {
-            winner = 3;
+        if (gameTurn > 42 && winner != 1 || gameTurn > 42 && winner != 2) {
             gameOver(winner);
         }
 
@@ -1201,7 +1200,6 @@ public class NewGame extends AppCompatActivity {
             Intent intent = new Intent(this, GameOverDraw.class);
             startActivity(intent);
         }
-
 
     }
 }

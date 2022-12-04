@@ -17,21 +17,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // establish first button
-        Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openNewGame();
-            }
-        });
+        Button button = findViewById(R.id.button);
+        button.setOnClickListener(view -> openNewGame());
 
-        button = (Button) findViewById(R.id.button2);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openHelp();
-            }
-        });
+        button = findViewById(R.id.button2);
+        button.setOnClickListener(view -> openHelp());
 
     }
 
