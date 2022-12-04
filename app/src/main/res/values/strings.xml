@@ -12,4 +12,5 @@
     <string name="playAgain">Play Again</string>
     <string name="turnCounter">1</string>
     <string name="turnCounterLabel">Turn:</string>
+    <string name="mainMenu">Main Menu</string>
 </resources>
