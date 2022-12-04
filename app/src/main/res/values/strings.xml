@@ -7,4 +7,5 @@
     <string name="gameOver">The game is over!</string>
     <string name="player1Win">Player 1 (Red) Wins!</string>
     <string name="player2Win">Player 2 (Blue) Wins!</string>
+    <string name="draw">There is no winner.</string>
 </resources>
