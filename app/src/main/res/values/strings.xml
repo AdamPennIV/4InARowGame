@@ -8,4 +8,8 @@
     <string name="player1Win">Player 1 (Red) Wins!</string>
     <string name="player2Win">Player 2 (Blue) Wins!</string>
     <string name="draw">There is no winner.</string>
+    <string name="appTitle">Four in a Row</string>
+    <string name="playAgain">Play Again</string>
+    <string name="turnCounter">1</string>
+    <string name="turnCounterLabel">Turn:</string>
 </resources>

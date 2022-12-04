@@ -29,7 +29,8 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="@string/appTitle" />
 
     <Button
         android:id="@+id/button2"
@@ -37,7 +38,6 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#FF0000"
         android:text="@string/Help"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

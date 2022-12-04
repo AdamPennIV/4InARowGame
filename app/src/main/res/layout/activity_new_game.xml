@@ -191,4 +191,30 @@
 
 
     </GridLayout>
+
+    <TextView
+        android:id="@+id/turnCounter"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp"
+        android:orientation="horizontal"
+        android:rotation="90"
+        android:text="@string/turnCounter"
+        android:textSize="23sp"
+        style="@style/gameText"
+        app:layout_constraintTop_toBottomOf="@id/turnCounterLabel"
+        app:layout_constraintRight_toLeftOf="@id/connectGrid" />
+
+    <TextView
+        android:id="@+id/turnCounterLabel"
+        style="@style/gameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="360dp"
+        android:rotation="90"
+        android:text="@string/turnCounterLabel"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/connectGrid" />
 </androidx.constraintlayout.widget.ConstraintLayout>

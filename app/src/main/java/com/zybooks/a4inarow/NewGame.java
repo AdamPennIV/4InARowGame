@@ -1,8 +1,10 @@
 package com.zybooks.a4inarow;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -32,6 +34,7 @@ public class NewGame extends AppCompatActivity {
     private int button25Player, button26Player, button27Player, button28Player, button29Player, button30Player; // Column 5 player colors
     private int button31Player, button32Player, button33Player, button34Player, button35Player, button36Player; // Column 6 player colors
     private int button37Player, button38Player, button39Player, button40Player, button41Player, button42Player; // Column 7 player colors
+    TextView turnCounterView; // View to display the # of turn
 
 
 
@@ -42,6 +45,7 @@ public class NewGame extends AppCompatActivity {
         setContentView(R.layout.activity_new_game);
         p1Color = ContextCompat.getColor(this, R.color.red);
         p2Color = ContextCompat.getColor(this, R.color.blue);
+        turnCounterView = findViewById(R.id.turnCounter);
         gameClick(); // Launches game method
 
 
@@ -50,6 +54,7 @@ public class NewGame extends AppCompatActivity {
     }
 
 
+    @SuppressLint("SetTextI18n")
     public void gameClick() {
 
         int[] buttonColumn = new int[42];
@@ -68,16 +73,15 @@ public class NewGame extends AppCompatActivity {
                 button1Player = 1; // sets value of button inside array to 1 for comparison in checks
                 gameTurn++; // sets value of button inside array to 1 for comparison in checks
 
-
             } else if (gameTurn % 2 == 0 && !one1isClicked) { // Checks if the turn is even to determine who's turn it is and if button is already clicked
                 button1.setBackgroundColor(p2Color); // Color is set to player 2 if turn is even
                 one1isClicked = true; // sets value of button to clicked so that its color cannot be changed
                 button1Player = 2; // sets value of button inside array to 2 for comparison in checks
                 gameTurn++; // increments the turn of the game
 
-
             }
             checkWinner(buttonColumn, buttonRow); // Checks after the button is clicked to see if the game has been won, passing row and column values
+            turnCounterView.setText(Integer.toString(gameTurn)); // Sets new value of gameTurn to text view
 
         });
 
@@ -92,6 +96,7 @@ public class NewGame extends AppCompatActivity {
                 one2isClicked = true; // sets value of button to clicked so that its color cannot be changed
                 button2Player = 1; // sets value of button inside array to 1 for comparison in checks
                 gameTurn++; // sets value of button inside array to 1 for comparison in checks
+                //turnCounterView.setText(Integer.toString(gameTurn));
 
 
             } else if ((gameTurn % 2 == 0 && !one2isClicked) && one1isClicked) { // Checks to see who's turn it is and if the button below is clicked
@@ -99,10 +104,12 @@ public class NewGame extends AppCompatActivity {
                 one2isClicked = true; // sets value of button to clicked so that its color cannot be changed
                 button2Player = 2; // sets value of button inside array to 2 for comparison in checks
                 gameTurn++; // increments the turn of the game
+                //turnCounterView.setText(Integer.toString(gameTurn));
 
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -127,6 +134,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
         });
 
         button4 = findViewById(R.id.one4);
@@ -149,6 +157,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -172,6 +181,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -195,6 +205,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -218,6 +229,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -241,6 +253,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -264,6 +277,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -287,6 +301,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -310,6 +325,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -333,6 +349,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -356,6 +373,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -379,6 +397,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -402,6 +421,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -425,6 +445,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -448,6 +469,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -471,6 +493,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -494,6 +517,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -517,6 +541,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -540,6 +565,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -563,6 +589,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -586,6 +613,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -609,6 +637,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -632,6 +661,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -655,6 +685,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -678,6 +709,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -701,6 +733,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -724,6 +757,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -747,6 +781,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -770,6 +805,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -793,6 +829,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -816,6 +853,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -839,6 +877,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -862,6 +901,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -885,6 +925,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -908,6 +949,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -931,6 +973,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -954,6 +997,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -977,6 +1021,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -1000,6 +1045,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
@@ -1023,6 +1069,7 @@ public class NewGame extends AppCompatActivity {
 
             }
             checkWinner(buttonColumn, buttonRow);
+            turnCounterView.setText(Integer.toString(gameTurn));
 
         });
 
