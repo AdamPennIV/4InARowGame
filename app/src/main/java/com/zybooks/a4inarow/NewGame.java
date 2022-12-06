@@ -1166,9 +1166,9 @@ public class NewGame extends AppCompatActivity {
             }
         }
 
-        if (gameTurn >= 7) { // Vertical Downwards Checks, playerTokens == 1 for Red/P1, == 2 for Blue/P2
-            for (int i = 0; i < playerToken.length-15; i++) {
-                if (buttonRow[i] > buttonRow[i+5] && buttonRow[1+5] > buttonRow[i+10] && buttonRow[i+10] > buttonRow[i+15]) {
+        if (gameTurn >= 7) { // Vertical Upwards Checks, playerTokens == 1 for Red/P1, == 2 for Blue/P2
+            for (int i = 0; i < playerToken.length-18; i++) {
+                if (buttonRow[i] > buttonRow[i + 5] && buttonRow[i + 5] > buttonRow[i + 10] && buttonRow[i+10] > buttonRow[i+15]) {
                     if (playerToken[i] == 1 && playerToken[i+5] == 1 && playerToken[i+10] == 1 && playerToken[i+15] == 1) {
                         winner = 1;
                         gameOver(winner);
@@ -1179,6 +1179,10 @@ public class NewGame extends AppCompatActivity {
                 }
             }
         }
+
+
+
+
 
         if (gameTurn > 42 && winner != 1 || gameTurn > 42 && winner != 2) {
             gameOver(winner);
