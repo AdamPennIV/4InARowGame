@@ -1142,17 +1142,19 @@ public class NewGame extends AppCompatActivity {
 
         if (gameTurn >= 7) { // Horizontal Checks, playerTokens == 1 for Red/P1, == 2 for Blue/P2
             for (int i = 0; i < playerToken.length-18; i++) {
-                if (playerToken[i] == 1 && playerToken[i+6] == 1 && playerToken[i+12] == 1 && playerToken[i+18] == 1) {
-                    winner = 1;
-                    gameOver(winner);
-                } else if (playerToken[i] == 2 && playerToken[i+6] == 2 && playerToken[i+12] == 2 && playerToken[i+18] == 2) {
-                    winner = 2;
-                    gameOver(winner);
+                if (buttonRow[i] == buttonRow[i + 6] && buttonRow[i + 6] == buttonRow[i + 12] && buttonRow[i+12] == buttonRow[i+18]) {
+                    if (playerToken[i] == 1 && playerToken[i+6] == 1 && playerToken[i+12] == 1 && playerToken[i+18] == 1) {
+                        winner = 1;
+                        gameOver(winner);
+                    } else if (playerToken[i] == 2 && playerToken[i+6] == 2 && playerToken[i+12] == 2 && playerToken[i+18] == 2) {
+                        winner = 2;
+                        gameOver(winner);
+                    }
                 }
             }
         }
 
-        if (gameTurn >= 7) { // Vertical Upwards Checks, playerTokens == 1 for Red/P1, == 2 for Blue/P2
+        if (gameTurn >= 7) { // Diagonal Upwards Checks, playerTokens == 1 for Red/P1, == 2 for Blue/P2
             for (int i = 0; i < playerToken.length-21; i++) {
                 if (buttonRow[i] < buttonRow[i + 7] && buttonRow[i + 7] < buttonRow[i + 14] && buttonRow[i+14] < buttonRow[i+21]) {
                     if (playerToken[i] == 1 && playerToken[i+7] == 1 && playerToken[i+14] == 1 && playerToken[i+21] == 1) {
@@ -1166,7 +1168,7 @@ public class NewGame extends AppCompatActivity {
             }
         }
 
-        if (gameTurn >= 7) { // Vertical Upwards Checks, playerTokens == 1 for Red/P1, == 2 for Blue/P2
+        if (gameTurn >= 7) { // Diagonal Downwards Checks, playerTokens == 1 for Red/P1, == 2 for Blue/P2
             for (int i = 0; i < playerToken.length-18; i++) {
                 if (buttonRow[i] > buttonRow[i + 5] && buttonRow[i + 5] > buttonRow[i + 10] && buttonRow[i+10] > buttonRow[i+15]) {
                     if (playerToken[i] == 1 && playerToken[i+5] == 1 && playerToken[i+10] == 1 && playerToken[i+15] == 1) {
